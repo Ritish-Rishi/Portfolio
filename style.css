@@ -1,0 +1,202 @@
+html{
+    background-color: #FFEA20;
+}
+li{
+    display: inline;
+    gap: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color:darkcyan;
+    border: black solid 2px;
+    border-radius: 5dvh;
+    gap: 30px;
+}
+.name{
+    padding: 0%;
+    background-color: white;
+    border: black solid 10px;
+    border-radius: 5dvh;
+    color: black;
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.about_me{
+    color: black;
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+.hero{
+    
+    background-color: aquamarine;
+    border: black solid 10px;
+    border-radius: 5%;
+    color: black;
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size:xx-large
+}
+
+.container-hero{
+display: flex;
+flex-shrink: 1;
+
+}
+.flex-container{
+display:block-flex;
+flex-direction: row;
+flex-shrink: 1;
+flex-grow: 1;
+
+}
+
+.nav-hero{
+grid-column: span 2;
+
+}
+.item{
+color: black;
+
+background-color: yellow;
+border: black solid 2px;
+border-radius: 5dvh;
+}
+.skills-cont{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr ;
+gap: 40px;
+
+background-color: #434765;
+border: lightblue solid 14px;
+   border-radius: 5%;
+    
+    color:black;
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size:xx-large;
+}
+.hero-content{
+flex-shrink: 1;
+flex-grow: 1;
+}
+.item-skills{
+display: block-flex;
+justify-content: center;
+flex-shrink: 1;
+flex-grow: 1;
+grid-column: span 1;
+color: black;
+border: black solid 4px;
+background-color: lavender;
+
+border-radius: 10%;
+}
+.prj-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.prj-item{
+    display: block-flex;
+justify-content: center;
+flex-shrink: 1;
+flex-grow: 1;
+    grid-column: span 1;
+    
+    flex-direction: column;
+    
+}
+.prj-style{
+    border-radius: 15%;
+    color:black;
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size:x-large;
+}
+.prj-card{
+    border: black solid 5px;
+}
+.button{
+    background-color: black;
+    color: aliceblue;
+    font-size: medium;
+    
+}
+.contact{
+    
+    padding: 1px 2px 3px 4px;
+    background-color: white;
+    color: black;
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size:large;
+    
+}
+
+@media (max-width: 890px){
+.item-skills{
+    grid-column: span 2;
+}
+}
+@media (max-width: 650px){
+.item-skills{
+    grid-column: span 3;
+}
+}
+@media(max-width: 1100px){
+    .prj-item{
+        grid-column: span 2;;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    
+}
+.prj-style>h2{
+    font-size: 4rem;
+}
+@media(max-width:500px){
+    h1,h2{
+        font-size: 2rem;
+    }
+    a{
+        font-size: medium;
+    }
+    .hero-content>img{
+        height: 160px;
+        width: 120px;
+    }
+    .skills-cont{
+        font-size:x-large;
+    }
+    .skills-cont>img{
+        
+        height: 30px;
+        width: 50px
+    }
+    .prj-style>h2{
+        font-size: xx-large;
+    }
+}
